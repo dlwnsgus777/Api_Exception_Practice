@@ -10,15 +10,15 @@ public class ResponseWrapper<T> {
 	private T data;
 	private List<String> erros;
 	
-	public Map<String, Object> of(Object data) {
-		Map<String, Object> returnJson = new HashMap<>();
-		returnJson.put("data", data);
-		returnJson.put("erros", erros);
-		return returnJson;
-	}
+//	public Map<String, Object> of(Object data) {
+//		Map<String, Object> returnJson = new HashMap<>();
+//		returnJson.put("data", data);
+//		returnJson.put("erros", erros);
+//		return returnJson;
+//	}
 	
 	
-	public static ResponseEntity<Map<>> of(Object data) {
+	public static ResponseEntity<Map<String, Object>> of(Object data) {
 		Map<String, Object> returnJson = new HashMap<>();
 		returnJson.put("data", data);
 		returnJson.put("erros", erros);
